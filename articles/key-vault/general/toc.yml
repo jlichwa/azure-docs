@@ -41,7 +41,7 @@
     items:
     - name: Monitor with Azure Event Grid (preview)
       href: event-grid-overview.md
-  - name: Soft delete
+  - name: Soft-Delete
     items:
     - name: Azure Key Vault soft delete
       href: overview-soft-delete.md
