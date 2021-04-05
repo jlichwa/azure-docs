@@ -21,7 +21,12 @@ ms.author: mbaldwin
 ## Overview
 
 > [!IMPORTANT]
-> **Moving a key vault to another subscription will cause a breaking change to your environment.**
+> **Key Vaults used for disk encryption cannot be moved.**
+> If you are using key vault with disk encryption for a VM, the key vault cannot be moved to a different resource group or a subscription while disk encryption is enabled. You must disable disk encryption prior to moving the key vault to a new resource group or subscription. 
+
+> [!IMPORTANT]
+> **Moving a key vault to another subscription may cause a breaking change to your environment when moving across regions or tenants.**
+> In this article we concentrate on direct impact on key vault configuration, but there could be additional service and application scenarios which require additional steps i.e. encryption with CMK.
 > Make sure you understand the impact of this change and follow the guidance in this article carefully before deciding to move key vault to a new subscription.
 > If you are using Managed Service Identities (MSI) please read the post-move instructions at the end of the document. 
 
